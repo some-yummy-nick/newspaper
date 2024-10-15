@@ -1,0 +1,43 @@
+.article-item {
+  margin-bottom: 20px;
+  background-color: var(--white);
+
+  &__image{
+    border-radius: 12px 12px 0 0;
+  }
+
+  &__desc {
+    padding: 20px;
+    padding-bottom: 30px;
+    border-radius: 0 0 12px 12px;
+    border: 1px solid rgba(187, 189, 192, 0.5)
+  }
+
+  &__title {
+    font-family: "Fact", Arial, sans-serif;
+    font-size: 24px;
+    line-height: 30px
+  }
+
+  &__text {
+    color: #222222;
+    font-size: 18px;
+    margin-bottom: 15px;
+  }
+
+  &__label {
+    margin-bottom: 15px;
+  }
+
+  &__bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__comments {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+}

@@ -1,0 +1,13 @@
+.top-info {
+  padding: 20px;
+
+  &__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px 20px;
+    box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.12);
+    border-radius: 12px;
+    background-color: var(--white);
+  }
+}

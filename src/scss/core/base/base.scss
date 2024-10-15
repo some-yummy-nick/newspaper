@@ -1,0 +1,126 @@
+@use "sass:math";
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html,
+body {
+  min-height: 100vh;
+}
+
+html {
+  box-sizing: border-box;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+
+  &.overflow {
+    overflow: hidden;
+  }
+}
+
+.body {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  max-width: 414px;
+  margin: 0 auto;
+  font-size: $fz;
+  font-family: $font-primary;
+  line-height: $lh;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: var(--text-color);
+  background-color: #f4f5f5;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle;
+}
+
+button {
+  display: inline-block;
+  font-family: inherit;
+  cursor: pointer;
+
+  &[disabled] {
+    pointer-events: none;
+    opacity: 0.5;
+  }
+}
+
+label {
+  display: inline-block;
+  cursor: pointer;
+}
+
+strong,
+b {
+  font-weight: 500;
+}
+
+a {
+  display: inline-block;
+  text-decoration: none;
+  color: var(--text-color);
+  transition: color 0.3s, background-color 0.3s, text-decoration 0.3s, border-color 0.3s;
+
+  &:active {
+    color: var(--white);
+    text-decoration: underline;
+  }
+}
+
+.sr-only {
+  @include sr-only;
+}
+
+.reset-list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.reset-input {
+  margin: 0;
+  padding: 0;
+  border-color: transparent;
+  border: none;
+  background-color: transparent;
+  width: 100%;
+  color: var(--white);
+
+  &:-webkit-autofill {
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: white !important;
+  }
+
+  &:focus {
+    outline: none;
+  }
+}
+
+.textarea {
+  width: 100%;
+  background-color: transparent;
+  border: none;
+  color: var(--white);
+}
+
+.reset-btn {
+  margin: 0;
+  padding: 0;
+  border-color: transparent;
+  background-color: transparent;
+  border-width: 1px;
+  transition: border-color 0.3s, background-color 0.3s, color 0.3s;
+}
+
+h1, h2, h3, h4, h5, h6{
+  margin-top: 0;
+}

@@ -1,0 +1,12 @@
+.sponsor-info {
+  &__wrapper {
+    display: flex;
+    gap: 5px;
+  }
+
+  &__text {
+    color: #10002b;
+    line-height: 1.1;
+    font-size: 14px;
+  }
+}

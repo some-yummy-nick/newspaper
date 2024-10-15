@@ -1,0 +1,20 @@
+.weather-info {
+  &__wrapper {
+    display: flex;
+    gap: 10px;
+  }
+
+  &__city {
+    font-size: 14px;
+    color: #575754;
+  }
+
+  &__temperature {
+    color: #222222;
+    font-weight: 700;
+
+    span{
+      font-weight: 400;
+    }
+  }
+}

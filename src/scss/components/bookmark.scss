@@ -1,0 +1,19 @@
+.bookmark{
+  position: relative;
+  padding-left: 20px;
+  color: #969696;
+
+  &::before {
+    display: block;
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    width: 16px;
+    height: 16px;
+    background-repeat: no-repeat;
+    background-image: url("../images/icons/bookmark.svg");
+    filter: var(--gray-filter);
+  }
+}

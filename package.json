@@ -1,0 +1,40 @@
+{
+  "name": "xgram",
+  "version": "1.0.0",
+  "description": "",
+  "type": "module",
+  "scripts": {
+    "build": "gulp build --prod",
+    "dev": "gulp watch",
+    "proxy": "gulp proxy"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^10.4.19",
+    "browser-sync": "^3.0.2",
+    "cssnano": "^7.0.1",
+    "gulp": "^5.0.0",
+    "gulp-clean": "^0.4.0",
+    "gulp-notify": "^4.0.0",
+    "gulp-plumber": "^1.2.1",
+    "gulp-postcss": "^10.0.0",
+    "gulp-pug": "^5.0.0",
+    "gulp-sass": "^5.1.0",
+    "gulp-sass-glob": "^1.1.0",
+    "jstransformer": "^1.0.0",
+    "jstransformer-clean-css": "^2.1.0",
+    "jstransformer-markdown-it": "^3.0.0",
+    "jstransformer-scss": "^2.0.0",
+    "markdown-it-attrs": "^4.1.6",
+    "markdown-it-kbd": "^2.2.2",
+    "postcss-custom-media": "^10.0.6",
+    "postcss-discard-comments": "^7.0.0",
+    "pug-include-glob": "^0.4.3",
+    "sass": "^1.77.0"
+  },
+  "dependencies": {
+    "normalize.css": "^8.0.1"
+  }
+}

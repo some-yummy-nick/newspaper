@@ -1,0 +1,11 @@
+:root {
+  --white: #fff;
+  --text-color: #000;
+  --orange: #F95102;
+  --orange-filter: invert(41%) sepia(72%) saturate(4698%) hue-rotate(5deg) brightness(100%) contrast(104%);
+  --gray-filter: invert(66%) sepia(6%) saturate(11%) hue-rotate(39deg) brightness(91%) contrast(81%);
+}
+
+$font-primary: Roboto, -apple-system, Arial, sans-serif;
+$fz: 16px;
+$lh: 1.4;

@@ -1,0 +1,29 @@
+.comments-count{
+  position: relative;
+  padding-left: 20px;
+
+  &::before {
+    display: block;
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    width: 16px;
+    height: 16px;
+    background-repeat: no-repeat;
+    background-image: url("../images/icons/comment.svg");
+    filter: var(--orange-filter);
+  }
+
+  &_small{
+    font-size: 14px;
+    padding-left: 10px;
+
+    &::before {
+      width: 10px;
+      height: 10px;
+    }
+  }
+
+}

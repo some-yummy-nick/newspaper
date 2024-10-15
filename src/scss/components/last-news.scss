@@ -1,0 +1,51 @@
+.last-news {
+  padding: 30px 20px;
+  background-color: var(--white);
+
+  &__tabs {
+    display: flex;
+    gap: 5px;
+    margin-bottom: 20px;
+  }
+
+  &__tab {
+    flex-grow: 1;
+    padding: 10px;
+    background-color: rgba(229, 229, 229, 0.5);
+    border-radius: 8px;
+    text-align: center;
+    font-size: 14px;
+    color: var(--text-color);
+
+    &.active {
+      background-color: var(--orange);
+      color: var(--white);
+    }
+  }
+
+  &__items{
+    margin-bottom: 20px;
+  }
+
+  &__item {
+    &:not(:last-child) {
+      margin-bottom: 20px;
+    }
+  }
+
+  &__time {
+    font-size: 11px;
+    color: rgba(150, 150, 150, 1);
+  }
+
+  &__more{
+    width: 100%;
+    background-color: rgba(229, 229, 229, 0.5);
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 700;
+    text-align: center;
+    padding: 10px;
+    color: var(--text-color);
+  }
+}

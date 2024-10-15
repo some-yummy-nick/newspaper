@@ -1,0 +1,14 @@
+include ../components/head
+
+doctype html
+html(lang="ru")
+    +head
+    body.body
+        include ../components/top-info.pug
+        include ../components/currency-info.pug
+        include ../components/header.pug
+        .container
+            include ../components/article-item.pug
+            include ../components/main-news.pug
+        include ../components/last-news.pug
+    script(src="js/index.js" type="module")

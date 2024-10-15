@@ -1,0 +1,36 @@
+.currency-info {
+  background-color: #EDE7DD;
+  padding: 10px 20px;
+
+  &__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__desc {
+    display: flex;
+    gap: 5px;
+  }
+
+  &__text {
+    font-weight: 700;
+  }
+
+  &__items{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+
+  &__item {
+    display: flex;
+    gap: 3px;
+    font-weight: 700;
+
+    span{
+      font-weight: 400;
+    }
+  }
+
+}
